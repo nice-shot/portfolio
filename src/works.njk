@@ -1,0 +1,16 @@
+---
+layout: base.njk
+title: Works
+---
+
+<section class="works">
+    <h1>My Projects</h1>
+    <div class="grid">
+        {% for p in collections.projects | sort(attribute="data.order") %}
+            <a class="card" href="{{ p.url | url }}">
+                <img src="{{ p.data.thumbnail | url }}" alt="{{ p.data.title }}"/>
+                <h2>{{ p.data.title }}</h2>
+            </a>
+        {% endfor %}
+    </div>
+</section>
