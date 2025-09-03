@@ -3,6 +3,8 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/css");
     eleventyConfig.addPassthroughCopy("src/images");
 
+    eleventyConfig.addWatchTarget("./src/projects/");
+
     return {
         // If this is a GitHub *project* page, set pathPrefix to "/your-repo-name/"
         // For a user/org page (username.github.io) use "/"
