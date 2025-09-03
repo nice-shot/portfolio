@@ -8,6 +8,16 @@ body {
     line-height: 1.6;
 }
 
+a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 /* Container: keeps content centered */
 .container {
     width: 90%;
@@ -74,16 +84,6 @@ nav a:hover {
 .project p {
     font-size: 1.1rem;
     margin-bottom: 1rem;
-}
-
-.project a {
-    color: #0066cc;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.project a:hover {
-    text-decoration: underline;
 }
 
 .video-container {
