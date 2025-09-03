@@ -109,6 +109,21 @@ nav a:hover {
     border: 0;
 }
 
+/* Image rows for side-by-side images */
+.image-row {
+    display: flex;
+    gap: 1rem;
+    margin: 0 0 1.5rem 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-row img {
+    max-width: 45%;
+    height: auto;
+    width: auto;
+}
+
 /* Section spacing */
 main {
     padding: 2rem 0;
