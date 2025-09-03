@@ -49,8 +49,14 @@ nav a {
     transition: background 0.2s ease;
 }
 
+nav a.active {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
 nav a:hover {
     background: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
 }
 
 /* On small screens, bump it further */

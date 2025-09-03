@@ -1,7 +1,7 @@
 <nav>
     <div class="container">
-        <a href="{{ '/' | url }}">About</a>
-        <a href="{{ '/works/' | url }}">Works</a>
+        <a href="{{ '/' | url }}" class="{% if page.url == '/' %}active{% endif %}">About</a>
+        <a href="{{ '/works/' | url }}" class="{% if page.url.startsWith('/works') %}active{% endif %}">Works</a>
         <a href="mailto:{{ site.email }}">Contact</a>
     </div>
 </nav>
