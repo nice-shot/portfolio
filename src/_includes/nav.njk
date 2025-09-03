@@ -1,7 +1,10 @@
 <nav>
     <div class="container">
-        <a href="{{ '/about/' | url }}" class="{% if page.url == '/about/' %}active{% endif %}">About</a>
-        <a href="{{ '/' | url }}" class="{% if page.url == '/' or page.url.startsWith('/works') %}active{% endif %}">Works</a>
-        <a href="mailto:{{ site.email }}">Contact</a>
+        <a href="{{ '/' | url }}" class="brand">Nadav Sheffer's Portfolio</a>
+        <div class="nav-links">
+            <a href="{{ '/about/' | url }}" class="{% if page.url == '/about/' %}active{% endif %}">About</a>
+            <a href="{{ '/' | url }}" class="{% if page.url == '/' or page.url.startsWith('/works') %}active{% endif %}">Works</a>
+            <a href="mailto:{{ site.email }}">Contact</a>
+        </div>
     </div>
 </nav>
